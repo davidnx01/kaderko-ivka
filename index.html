@@ -1,0 +1,268 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Kaderko Ivka · kaderníctvo na Farskej 2 v Trenčíne — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Kaderko Ivka, kaderníctvo na Farskej 2 v Trenčíne. Ukážka od webdavid.sk.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400..800&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ECE7E4; --paper2:#E3DCD8; --ink:#231B19; --ink2:#5B4D48;
+  --hair:rgba(35,27,25,.14); --dom:#8E1F3A; --dom-d:#6F1730;
+  --s10:#1D1614; --s40:#50362A; --s60:#86603F; --s80:#C09A68; --s90:#D8BD8C;
+  --gold:#B08A3E;
+  --round:"Grandstander",ui-rounded,system-ui,sans-serif; --slab:"Sanchez",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--slab);}
+img,svg{max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--dom);outline-offset:3px;border-radius:2px}
+.lbl{font:600 12.5px/1.3 var(--round);letter-spacing:.16em;text-transform:uppercase}
+.num{font-family:var(--round);font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.u:hover{background-size:100% 1px}
+
+/* pruh */
+.notice{background:var(--s10);color:#EFE6E0;font:500 13px/1.45 var(--round);padding:9px 16px;text-align:center}
+
+/* hlavička */
+.top{border-bottom:1px solid var(--hair)}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
+.mark{display:flex;align-items:center;gap:10px;font:800 23px/1 var(--round);text-decoration:none;letter-spacing:-.01em}
+.mark i{display:flex;gap:2px}
+.mark i b{width:6px;height:22px;border-radius:3px 3px 6px 6px;background:var(--s40)}
+.mark i b:nth-child(2){background:var(--dom);height:26px;margin-top:-4px}
+.mark i b:nth-child(3){background:var(--s90)}
+.nav{display:flex;gap:26px;margin-left:auto;font:500 15px/1 var(--round)}
+.nav a{padding:14px 0}
+.tel{font:700 16px/1 var(--round);text-decoration:none;font-variant-numeric:tabular-nums;padding:14px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:24px;background:var(--dom);color:#fff;font:700 16px/1 var(--round);text-decoration:none;transition:background .2s}
+.btn:hover{background:var(--dom-d)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:rgba(35,27,25,.06)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:24px;align-items:center;min-height:min(600px,82vh);padding-top:40px;padding-bottom:36px}
+.hero .lbl{color:var(--dom)}
+h1{font:800 clamp(58px,9.4vw,124px)/.86 var(--round);letter-spacing:-.035em;margin:18px 0 22px}
+h1 span{display:block;color:var(--dom)}
+.lead{font-size:19px;max-width:30ch;color:var(--ink2)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:0;margin-top:38px;border-top:1px solid var(--hair)}
+.facts div{padding:14px 26px 0 0;margin-right:26px;border-right:1px solid var(--hair)}
+.facts div:last-child{border:0;margin:0}
+.facts b{display:block;font:700 27px/1.1 var(--round);font-variant-numeric:tabular-nums}
+.facts small{display:block;font:400 13.5px/1.35 var(--slab);color:var(--ink2);margin-top:4px}
+.fan{width:100%;max-width:540px;justify-self:end;margin-top:-10px}
+
+
+/* služby = odtiene */
+.svc{background:var(--s10);color:#EFE6E0;padding:84px 0 92px}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+.svc h2{font:800 clamp(40px,5.6vw,72px)/.95 var(--round);letter-spacing:-.03em}
+.svc-head p{max-width:36ch;color:rgba(239,230,224,.72);font-size:16px}
+.bands{display:grid;gap:14px}
+.band{position:relative;display:grid;grid-template-columns:160px 1fr auto;align-items:center;gap:28px;min-height:132px;padding:22px 120px 22px 32px;color:#fff;
+  clip-path:polygon(0 0,calc(100% - 96px) 0,100% 50%,calc(100% - 96px) 100%,0 100%);
+  background:repeating-linear-gradient(176deg,rgba(255,255,255,.075) 0 1px,transparent 1px 7px),repeating-linear-gradient(183deg,rgba(0,0,0,.09) 0 1px,transparent 1px 11px),var(--c)}
+.band .code{font:800 64px/1 var(--round);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.band h3{font:700 clamp(24px,2.6vw,34px)/1.1 var(--round)}
+.band p{font-size:15px;opacity:.85;margin-top:4px}
+.band .tag{font:600 12px/1.3 var(--round);letter-spacing:.14em;text-transform:uppercase;opacity:.85;text-align:right}
+.band.light{color:var(--ink)}
+.svc .src{margin-top:24px;font-size:14px;color:rgba(239,230,224,.6)}
+
+/* ocenenia */
+.prize{padding:96px 0 40px}
+.prize .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:start}
+.prize h2{font:800 clamp(34px,4.4vw,54px)/1 var(--round);letter-spacing:-.025em;margin:14px 0 26px}
+.prize .lbl{color:var(--dom)}
+.prize h2 span{display:block;color:var(--dom);white-space:nowrap}
+blockquote{font:italic 400 clamp(21px,2.1vw,26px)/1.45 var(--slab);border-left:0;padding:0;max-width:34ch}
+blockquote + p{margin-top:16px;font-size:14px;color:var(--ink2)}
+.cited{margin-top:30px;font-size:17px;max-width:42ch}
+.medals{display:flex;gap:10px;margin-bottom:34px;flex-wrap:wrap}
+.medal{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 35% 30%,#E9D29A,#C3A057 46%,#9C7A35 100%);
+  box-shadow:inset 0 0 0 4px rgba(255,255,255,.25),inset 0 0 0 5px rgba(90,64,20,.35)}
+.medal span{font:800 17px/1 var(--round);color:#4A3712;font-variant-numeric:tabular-nums}
+.score{border-top:1px solid var(--hair)}
+.score div{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--hair)}
+.score b{font:800 30px/1 var(--round);font-variant-numeric:tabular-nums}
+.score b em{font-style:normal;font-size:16px;color:var(--ink2)}
+.score span{font-size:15.5px;line-height:1.45}
+.score small{display:block;color:var(--ink2);font-size:13.5px}
+
+/* kontakt */
+.contact{padding:56px 0 96px}
+.card{display:grid;grid-template-columns:1.1fr 1fr 1fr;border:1px solid var(--hair);border-radius:4px;background:var(--paper2)}
+.card > div{padding:34px 32px}
+.card > div + div{border-left:1px solid var(--hair)}
+.card h2{font:800 clamp(34px,3.6vw,46px)/1 var(--round);letter-spacing:-.025em;margin:12px 0 10px}
+.card h3{margin-bottom:10px}
+.card .lbl{color:var(--dom)}
+.card p{font-size:16px}
+.card .big{font:700 26px/1.2 var(--round);font-variant-numeric:tabular-nums;text-decoration:none;display:inline-block;padding:6px 0}
+.card .note{font-size:13.5px;color:var(--ink2);margin-top:6px}
+.links{list-style:none;padding:0;margin-top:8px}
+.links a{display:inline-block;padding:10px 0;font:600 16px/1.2 var(--round)}
+
+footer{border-top:1px solid var(--hair);padding:28px 0 34px;font:500 14px/1.5 var(--round);color:var(--ink2)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* mobilná lišta */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(236,231,228,.96);border-top:1px solid var(--hair);backdrop-filter:blur(8px)}
+.mbar a{flex:1;min-height:50px;border-radius:25px}
+
+@media (max-width:980px){
+  .nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0;padding-top:30px}
+  .fan{justify-self:center;max-width:460px;margin-top:6px}
+  .prize .wrap{grid-template-columns:1fr;gap:48px}
+  .card{grid-template-columns:1fr}
+  .card > div + div{border-left:0;border-top:1px solid var(--hair)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .top .wrap{min-height:64px}
+  .top .tel,.top .btn{display:none}
+  .mbar{display:flex}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts div{padding-right:14px;margin-right:14px}
+  .facts div:nth-child(2){border:0;margin:0}
+  .facts div:last-child{grid-column:1/-1;border-top:1px solid var(--hair);margin-top:14px;padding-bottom:0}
+  .facts b{font-size:24px}
+  .cta .btn{flex:1}
+  .xs-hide{display:none}
+  .svc{padding:60px 0 64px}
+  .svc-head{display:block}
+  .svc-head p{margin-top:14px}
+  .band{grid-template-columns:auto 1fr;gap:6px 16px;padding:18px 64px 18px 20px;min-height:0;clip-path:polygon(0 0,calc(100% - 48px) 0,100% 50%,calc(100% - 48px) 100%,0 100%)}
+  .band .code{font-size:40px;grid-row:1/3;align-self:start}
+  .band .tag{grid-column:2;text-align:left}
+  .prize{padding:64px 0 24px}
+  .medal{width:58px;height:58px}
+  .medal span{font-size:14px}
+  .score div{grid-template-columns:86px 1fr}
+  .score b{font-size:24px}
+  .card > div{padding:26px 20px}
+  .contact{padding:40px 0 56px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header class="top"><div class="wrap">
+  <a class="mark" href="#" aria-label="Kaderko Ivka — úvod"><i aria-hidden="true"><b></b><b></b><b></b></i>Kaderko Ivka</a>
+  <nav class="nav" aria-label="Hlavná navigácia"><a class="u" href="#sluzby">Služby</a><a class="u" href="#ocenenia">Ocenenia</a><a class="u" href="#kontakt">Kontakt</a></nav>
+  <a class="tel" href="tel:+421918073672">0918 073 672</a>
+  <a class="btn" href="tel:+421918073672">Zavolať</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="lbl">Kaderníctvo · Farská 2 · Trenčín</p>
+    <h1>Kaderko <span>Ivka</span></h1>
+    <p class="lead">Kaderníctvo na Farskej ulici v Trenčíne, ocenené na Orly Kaderníctva päť rokov za sebou.</p>
+    <div class="cta">
+      <a class="btn" href="tel:+421918073672">Zavolať<span class="xs-hide"> a objednať sa</span></a>
+      <a class="btn ghost" href="https://www.orlykadernictva.eu/profile-3268-kaderko-ivka" rel="noopener">Profil na Orly</a>
+    </div>
+    <div class="facts">
+      <div><b>9,9/10</b><small>Orly Kaderníctva<br>38 hodnotení</small></div>
+      <div><b>2022–26</b><small>laureát Orly<br>Kaderníctva</small></div>
+      <div><b>5,0 ★</b><small>Google, 16 hodnotení<br>(overiť)</small></div>
+    </div>
+  </div>
+
+  <svg class="fan" viewBox="0 0 740 724" role="img" aria-label="Kresba: kruh vzorkovníka vlasových odtieňov od čiernej po svetlú blond, v strede bordový pramienok">
+    <defs>
+      <g id="lk">
+        <rect x="-19" y="-12" width="38" height="50" rx="6" fill="#F7F3F1" stroke="rgba(35,27,25,.2)"/>
+        <circle r="4.5" fill="#ECE7E4" stroke="rgba(35,27,25,.3)"/>
+        <path d="M-17 37 C-20 110 -14 190 -7 262 Q0 292 6 262 C14 190 20 110 17 37 Z" fill="currentColor"/>
+        <path d="M-10 44 C-11 120 -7 196 -2 256 M-1 42 C0 126 2 200 2 266 M8 44 C9 124 8 196 4 248" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1.2"/>
+        <path d="M-14 46 C-15 126 -10 200 -5 248 M13 46 C14 126 10 200 5 248" fill="none" stroke="#000" stroke-opacity=".16" stroke-width="1.5"/>
+      </g>
+    </defs>
+    <g transform="translate(370 180)" font-family="Grandstander,sans-serif" font-weight="700" font-size="12.5" fill="#231B19">
+      <circle r="170" fill="none" stroke="#B9B2AD" stroke-width="2" stroke-dasharray="2 7"/>
+      <g transform="rotate(52) translate(0 170)" color="#EADBB9"><use href="#lk"/><text y="25" text-anchor="middle">10.0</text></g><g transform="rotate(39) translate(0 170)" color="#D8BD8C"><use href="#lk"/><text y="25" text-anchor="middle">9.0</text></g><g transform="rotate(26) translate(0 170)" color="#C09A68"><use href="#lk"/><text y="25" text-anchor="middle">8.0</text></g><g transform="rotate(13) translate(0 170)" color="#A37A50"><use href="#lk"/><text y="25" text-anchor="middle">7.0</text></g><g transform="rotate(-13) translate(0 170)" color="#86603F"><use href="#lk"/><text y="25" text-anchor="middle">6.0</text></g><g transform="rotate(-26) translate(0 170)" color="#50362A"><use href="#lk"/><text y="25" text-anchor="middle">4.0</text></g><g transform="rotate(-39) translate(0 170)" color="#3A2620"><use href="#lk"/><text y="25" text-anchor="middle">3.0</text></g><g transform="rotate(-52) translate(0 170)" color="#1D1614"><use href="#lk"/><text y="25" text-anchor="middle">1.0</text></g>
+      <circle r="170" fill="none" stroke="#8C847F" stroke-width="5"/>
+      <circle r="170" fill="none" stroke="#F4F0EE" stroke-width="1.4" stroke-dasharray="40 30" stroke-dashoffset="12"/>
+      <g transform="translate(0 170) scale(1.22)" color="#8E1F3A"><use href="#lk"/><text y="25" text-anchor="middle" fill="#8E1F3A">5.62</text></g>
+      
+      <circle cx="0" cy="170" r="5.5" fill="none" stroke="#8C847F" stroke-width="4"/>
+    </g>
+  </svg>
+</div></section>
+
+<section class="svc" id="sluzby" aria-labelledby="svc-h"><div class="wrap">
+  <div class="svc-head">
+    <h2 id="svc-h">Služby</h2>
+    <p>Každá služba má na stránke svoj odtieň. Konkrétny zoznam s cenami a trvaním doplní kaderníctvo.</p>
+  </div>
+  <div class="bands">
+    <div class="band" style="--c:#8E1F3A"><span class="code" aria-hidden="true">5.62</span><div><h3>Dámske kaderníctvo</h3><p>Konkrétne úkony a ceny upresní salón pri objednaní.</p></div><span class="tag">podľa verejných<br>údajov, overiť</span></div>
+    <div class="band" style="--c:#50362A"><span class="code" aria-hidden="true">4.0</span><div><h3>Pánske kaderníctvo</h3><p>Konkrétne úkony a ceny upresní salón pri objednaní.</p></div><span class="tag">podľa verejných<br>údajov, overiť</span></div>
+    <div class="band light" style="--c:#D8BD8C"><span class="code" aria-hidden="true">9.0</span><div><h3>Cenník</h3><p>Ukážka návrhu: služby, ceny a trvanie doplní podnik.</p></div><span class="tag">ukážka</span></div>
+  </div>
+  <p class="src">Čísla na pásoch sú len kresba vzorkovníka (úroveň.tón odtieňa), nie kódy farieb, ktoré salón používa.</p>
+</div></section>
+
+<section class="prize" id="ocenenia" aria-labelledby="prize-h"><div class="wrap">
+  <div>
+    <p class="lbl">Čo o salóne píše Orly Kaderníctva</p>
+    <h2 id="prize-h">Laureát Orly Kaderníctva <span>2022–2026</span></h2>
+    <blockquote>„Moderné kaderníctvo so sídlom v Trenčíne na Farskej ulici číslo 2, ktoré sa venuje poskytovaniu vysoko kvalitných vlasových služieb.“</blockquote>
+    <p>— profil na orlykadernictva.eu, 1. 10. 2026</p>
+    <p class="cited">Ocenené za „jedinečnú kombináciu profesionálneho a priateľského prístupu“.</p>
+  </div>
+  <div>
+    <div class="medals" aria-label="Zlaté medaily Orly Kaderníctva za roky 2022 až 2026">
+      <div class="medal"><span>2022</span></div><div class="medal"><span>2023</span></div><div class="medal"><span>2024</span></div><div class="medal"><span>2025</span></div><div class="medal"><span>2026</span></div>
+    </div>
+    <div class="score">
+      <div><b>9,9<em>/10</em></b><span>Orly Kaderníctva, 38 hodnotení<small>stav k 1. 10. 2026</small></span></div>
+      <div><b>5,0<em>/5</em></b><span>14 + 24 hodnotení, súčasť skóre Orly<small>platformy Orly neuvádza</small></span></div>
+      <div><b>5,0<em> ★</em></b><span>Google, 16 hodnotení<small>podľa verejných údajov, overiť</small></span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="kontakt" aria-labelledby="kontakt-h"><div class="wrap">
+  <div class="card">
+    <div>
+      <p class="lbl">Kde nás nájdete</p>
+      <h2 id="kontakt-h">Farská 2</h2>
+      <p>Trenčín</p>
+      <ul class="links"><li><a class="u" href="https://www.google.com/maps/search/Kaderko+Ivka+Tren%C4%8D%C3%ADn" rel="noopener">Otvoriť v Google Maps</a></li></ul>
+    </div>
+    <div>
+      <h3 class="lbl">Objednanie</h3>
+      <a class="big" href="tel:+421918073672">0918 073 672</a>
+      <p class="note">Telefón podľa kaderkoivka.sk — overiť.</p>
+      <ul class="links"><li><a class="u" href="https://www.facebook.com/1510086252625026" rel="noopener">Facebook</a></li><li><a class="u" href="https://www.orlykadernictva.eu/profile-3268-kaderko-ivka" rel="noopener">Orly Kaderníctva</a></li></ul>
+    </div>
+    <div>
+      <h3 class="lbl">Otváracie hodiny</h3>
+      <p>Zatiaľ nie sú zverejnené.</p>
+      <p class="note">Ukážka návrhu: hodiny doplní podnik. Ich stránka zatiaľ odkazuje na telefonický kontakt.</p>
+    </div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Kaderko Ivka · Farská 2, Trenčín</span></div></footer>
+
+<nav class="mbar" aria-label="Rýchle akcie">
+  <a class="btn" href="tel:+421918073672">Zavolať</a>
+  <a class="btn ghost" href="https://www.google.com/maps/search/Kaderko+Ivka+Tren%C4%8D%C3%ADn" rel="noopener">Navigovať</a>
+</nav>
+</html>
